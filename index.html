@@ -12,11 +12,13 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        animation: shiftLeft 0.8s ease-out 2s forwards;
       }
 
       .smiley {
         opacity: 0;
-        transform: translateX(-50px);
+        margin-left: 30px;
+        transform: translateX(-80px);
         animation: slideIn 0.8s ease-out 2s forwards;
       }
 
@@ -24,6 +26,12 @@
         to {
           opacity: 1;
           transform: translateX(0);
+        }
+      }
+
+      @keyframes shiftLeft {
+        to {
+          transform: translateX(-40px);
         }
       }
     </style>
